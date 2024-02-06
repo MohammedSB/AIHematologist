@@ -1,0 +1,15 @@
+{ 
+ "channel_names": {
+    "0": "R",
+    "1": "G",
+    "2": "B"
+ }, 
+ "labels": {
+    "background": 0,
+    "whole_cell": [1, 2],
+    "nucleus": 2
+ },
+   "regions_class_order": [1, 2], 
+   "numTraining": 231, 
+   "file_ending": ".png"
+ }
