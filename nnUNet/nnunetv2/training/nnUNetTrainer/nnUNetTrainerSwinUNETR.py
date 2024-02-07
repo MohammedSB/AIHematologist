@@ -27,6 +27,7 @@ class nnUNetTrainerSwinUNETR(nnUNetTrainerNoDeepSupervision):
         self.grad_scaler = None
         self.initial_lr = 8e-4
         self.weight_decay = 0.01
+        self.num_epochs = 100
 
     @staticmethod
     def build_network_architecture(plans_manager: PlansManager,
