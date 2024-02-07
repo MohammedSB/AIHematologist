@@ -31,9 +31,9 @@ class HemaDataset(torch.utils.data.Dataset):
         else:
             raise Exception(f"wrong split {self.split}, possible options are {split_options}")
         
-        self.images = [self.images_root + os.sep + image_name for image_name in os.listdir(self.images_root)] 
+        self.images = sorted([self.images_root + os.sep + image_name for image_name in os.listdir(self.images_root)]) 
         if self.labels_root != None:
-            self.labels = [self.labels_root + os.sep + label_name for label_name in os.listdir(self.labels_root)]
+            self.labels = sorted([self.labels_root + os.sep + label_name for label_name in os.listdir(self.labels_root)])
         
     def __len__(self):
         return len(self.images)
